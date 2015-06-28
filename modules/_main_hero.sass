@@ -1,0 +1,31 @@
+.main_hero
+  margin-top: 60px
+  width: 100%
+  height: 100vh
+  background: linear-gradient( slategrey, rgba(0,0,0,0.75))
+  background-color: slategrey
+  background-size: cover
+  background-position: center bottom
+  background-repeat: no-repeat
+
+  h1
+    text-align: center
+    color: white
+    text-transform: uppercase
+    line-height: 0.75em
+    font:
+      size: 3.25rem
+      family: 'Ubuntu Mono'
+      weight: 700
+    text-shadow: 2px 2px 2px rgba(0,0,0,0.8)
+
+    &:nth-child(1)
+      padding-top: 10%
+
+    // the true being passed as an argument in passion
+    span
+      color: orange
+
+  //Hero will not be displayed on mobile
+  @media screen and (max-width: 680px)
+    display: none
